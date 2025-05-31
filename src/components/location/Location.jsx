@@ -6,7 +6,7 @@ const Location = () => {
       <div className="location_sub">
         <p className="l_title">Location & Travel Info</p>
 
-        <img src={flighting} alt="" className="p_img" />
+        <img src={flighting} alt="flightimage" className="p_img" />
       </div>
       <div className="location_sub">
         <div className="location_card">
