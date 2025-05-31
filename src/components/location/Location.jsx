@@ -1,12 +1,12 @@
 import "./l.css";
-import flight from "../../assets/flight.png";
+import flighting from "../../assets/flight.png";
 const Location = () => {
   return (
     <div className="location_grid">
       <div className="location_sub">
         <p className="l_title">Location & Travel Info</p>
 
-        <img src={flight} alt="" className="p_img" />
+        <img src={flighting} alt="" className="p_img" />
       </div>
       <div className="location_sub">
         <div className="location_card">
