@@ -82,7 +82,10 @@
     padding: 25px 30px;
     margin-bottom: 50px;
   }
-
+  .nav_content{
+    display: block;
+    align-items: normal;
+  }
   .nav_content {
     display: none;
   }
@@ -129,6 +132,8 @@
     padding: 20px 15px;
     margin-bottom: 30px;
   }
+
+
 
   .nav_content.mobile_menu_active {
     padding: 80px 15px 20px;
