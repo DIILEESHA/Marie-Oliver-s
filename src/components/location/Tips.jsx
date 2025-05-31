@@ -1,6 +1,6 @@
 import "./l.css";
 import "./tips.css";
-const Location = () => {
+const Tips = () => {
   return (
     <div className="location_grid tip">
       <div className="location_sub">
@@ -157,4 +157,4 @@ const Location = () => {
   );
 };
 
-export default Location;
+export default Tips;
