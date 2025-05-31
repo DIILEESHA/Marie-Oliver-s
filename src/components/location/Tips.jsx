@@ -1,6 +1,5 @@
 import "./l.css";
 import "./tips.css";
-import flight from "../../assets/flight.png";
 const Location = () => {
   return (
     <div className="location_grid tip">
