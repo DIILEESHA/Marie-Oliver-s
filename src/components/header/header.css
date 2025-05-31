@@ -27,8 +27,9 @@
 /* For tablets in portrait mode */
 @media (max-width: 768px) {
   .header {
-    margin: 50px 0;
-    min-height: 80vh; /* Slightly reduce height on tablets */
+    margin: -40px 0 0px 0;
+
+    min-height: 60vh; /* Slightly reduce height on tablets */
     flex-direction: column; /* Stack items vertically if needed */
     text-align: center; /* Center align text if there's any */
   }
@@ -42,21 +43,19 @@
 /* For mobile phones */
 @media (max-width: 480px) {
   .header {
-    margin: 40px 0;
-    min-height: 70vh; /* Further reduce height on phones */
+    margin: -40px 0 0px 0;
     padding: 0 20px; /* Add some side padding */
   }
   
   .header_img {
-    width: 90%; /* Make image take more width on small screens */
-    max-width: 300px; /* Prevent image from becoming too large */
+    width: 100%; /* Make image take more width on small screens */
+    max-width: 400px; /* Prevent image from becoming too large */
   }
 }
 
 /* For very small phones */
 @media (max-width: 360px) {
   .header {
-    min-height: 60vh;
     margin: 30px 0;
   }
   
