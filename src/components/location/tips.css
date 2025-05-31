@@ -1,0 +1,27 @@
+.hh {
+  text-align: right;
+  width: 100%;
+}
+
+.bvc {
+  background-color: #fff;
+}
+
+.ggc{
+    line-height: 190%;
+}
+
+.lic{
+    margin: 10px 0px 0px 30px;
+}
+
+.tip_grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tip {
+  background-color: var(--blue);
+  color: #fff;
+}

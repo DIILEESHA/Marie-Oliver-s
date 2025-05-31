@@ -1,0 +1,152 @@
+.location_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: var(--blue);
+  padding: 80px 60px;
+}
+.l_title {
+  font-weight: 400;
+  font-size: 50px;
+  width: 70%;
+  line-height: 150%;
+  font-family: "sunday";
+}
+.p_img {
+  width: 200px;
+}
+
+.l_line {
+  background-color: var(--blue);
+  width: 100%;
+  height: 1px;
+  margin: 40px 0;
+}
+
+.card_grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  font-family: "life";
+  font-weight: 400;
+}
+
+.ll_title {
+  line-height: 150%;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.ll_p {
+  font-size: 16px;
+  line-height: 150%;
+  font-family: "air";
+  font-weight: 300;
+}
+/* Existing styles remain the same until media queries */
+
+/* Large Laptop (1280px and below) */
+@media (max-width: 1280px) {
+  .location_grid {
+    padding: 70px 50px;
+  }
+
+  .l_title {
+    font-size: 45px;
+    width: 80%;
+  }
+}
+
+/* Laptop (1024px and below) */
+@media (max-width: 1024px) {
+  .location_grid {
+    padding: 60px 40px;
+  }
+
+  .l_title {
+    font-size: 40px;
+    width: 85%;
+  }
+
+  .p_img {
+    width: 180px;
+  }
+
+  .card_grid {
+    gap: 25px;
+  }
+}
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+  .location_grid {
+    grid-template-columns: 1fr;
+    padding: 50px 30px;
+    gap: 40px;
+  }
+
+  .tip {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .l_title {
+    font-size: 36px;
+    width: 100%;
+  }
+
+  .l_line {
+    margin: 30px 0;
+  }
+
+  .card_grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .p_img {
+    width: 160px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  .location_grid {
+    padding: 40px 20px;
+  }
+
+  .l_title {
+    font-size: 30px;
+  }
+
+  .ll_title {
+    font-size: 16px;
+  }
+
+  .ll_p {
+    font-size: 14px;
+  }
+
+  .p_img {
+    width: 140px;
+  }
+
+  .l_line {
+    margin: 25px 0;
+  }
+}
+
+/* Small Mobile (360px and below) */
+@media (max-width: 360px) {
+  .location_grid {
+    padding: 30px 15px;
+  }
+
+  .l_title {
+    font-size: 26px;
+  }
+
+  .p_img {
+    width: 120px;
+  }
+}
