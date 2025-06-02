@@ -1,10 +1,12 @@
 .rsvp {
   padding: 80px;
   text-align: center;
+  background-color: var(--blue);
+
 }
 
 .rsvp_title {
-  color: var(--blue);
+  color: #fff;
   width: 50%;
   line-height: 150%;
   font-size: 50px;
@@ -13,14 +15,14 @@
 }
 
 .rsvps_btn {
-  background-color: var(--blue);
-  color: #fff;
+  background-color: #fff;
   font-size: 25px;
   cursor: pointer;
   border: none;
   font-family: "life";
   padding: 15px 20px;
   margin-top: 50px;
+  color: #000!important;
 }
 
 /* Media Queries for Responsive Design */

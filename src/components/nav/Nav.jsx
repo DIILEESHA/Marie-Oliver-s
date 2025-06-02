@@ -55,6 +55,18 @@ const Nav = () => {
                 tips
               </Link>
             </li>
+
+
+            <li className="nav_li">
+              <Link
+                to="gift"
+                smooth={true}
+                duration={500}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                gift
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="nav_sec">

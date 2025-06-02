@@ -1,3 +1,4 @@
+import Gift from "./components/gift/Gift";
 import Header from "./components/header/Header";
 import Location from "./components/location/Location";
 import Tips from "./components/location/Tips";
@@ -13,6 +14,7 @@ const App = () => {
       <Schedule />
       <Location />
       <Tips />
+      <Gift />
       <Rsvp />
     </div>
   );

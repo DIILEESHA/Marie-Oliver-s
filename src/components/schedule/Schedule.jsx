@@ -24,7 +24,7 @@ const Schedule = () => {
                 </a>
                 , 6:30PM
               </p>
-              <h3 className="sm_s_title">Getting There</h3>
+              {/* <h3 className="sm_s_title">Getting There</h3> */}
               <p className="other_p">
                 Take the ferry from the port of Pounda (not Parikia). No need to
                 book in advance - just arrive about 5 minutes early. The ride

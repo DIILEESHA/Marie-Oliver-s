@@ -5,7 +5,11 @@ const Location = () => {
       <div className="location_sub">
         <p className="l_title">Location & Travel Info</p>
 
-        <img src="https://i.imgur.com/Sws8lXR.png" alt="flightimage" className="p_img" />
+        <img
+          src="https://i.imgur.com/Sws8lXR.png"
+          alt="flightimage"
+          className="p_img"
+        />
       </div>
       <div className="location_sub">
         <div className="location_card">
@@ -31,7 +35,6 @@ const Location = () => {
         {/* two */}
 
         <div className="location_card">
-
           <div className="card_grid">
             <div className="card_sub_l">
               <h2 className="ll_title">HOW TO GET TO PAROS</h2>
@@ -41,7 +44,15 @@ const Location = () => {
                 Paros doesn't have an international airport, but you have
                 several good optionsto reach us. You can take a ferry from
                 Athens, fly domestically from Athens, or connect through nearby
-                islands. Check here for detailed transportation information.
+                islands. Check
+                <a
+                  href="https://we.tl/t-1AlLrpfebI"
+                  style={{ margin: "0px 5px" }}
+                  target="_blank"
+                >
+                  here
+                </a>
+                for detailed transportation information.
               </p>
             </div>
           </div>
@@ -51,7 +62,6 @@ const Location = () => {
         {/* third */}
 
         <div className="location_card">
-
           <div className="card_grid">
             <div className="card_sub_l">
               <h2 className="ll_title">WHERE TO STAY</h2>
@@ -61,7 +71,14 @@ const Location = () => {
                 We recommend staying in either Parikia or Aliki. These charming
                 areas are both just a 10- minute drive from our wedding venue in
                 Pounda. Need accommodation suggestions? Find helpful
-                recommendations here.
+                recommendations{" "}
+                <a
+                  href="https://we.tl/t-1AlLrpfebI"
+                  style={{ margin: "0px 5px" }}
+                  target="_blank"
+                >
+                  here.
+                </a>
               </p>
             </div>
           </div>
@@ -70,7 +87,6 @@ const Location = () => {
 
         {/* fourth */}
         <div className="location_card">
-
           <div className="card_grid">
             <div className="card_sub_l">
               <h2 className="ll_title">GETTING AROUND</h2>
@@ -79,8 +95,16 @@ const Location = () => {
               <p className="ll_p">
                 You can easily get around by scooter, car, or taxi during
                 yourstay. Let us know your preference 1- 2 months before
-                arrival, and we'll help arrange rentalsthrough our trusted local
-                agencies.
+                arrival, and we'll help arrange
+                <a
+                  href="https://we.tl/t-1AlLrpfebI"
+                  style={{ margin: "0px 5px" }}
+                  target="_blank"
+                >
+                  {" "}
+                  rentalsthrough{" "}
+                </a>
+                rentalsthrough our trusted local agencies.
               </p>
             </div>
           </div>
