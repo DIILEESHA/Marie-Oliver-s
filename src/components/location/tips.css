@@ -122,6 +122,10 @@
   display: block;
   
   }
+
+  .tips-container{
+    padding:3rem 1rem;
+  }
   .tips-grid {
     grid-template-columns: 1fr;
   }
