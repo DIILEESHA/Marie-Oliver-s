@@ -9,7 +9,6 @@ const Rsvp = () => {
         <a
           href="https://forms.gle/heZRAv9Qy3rgXaT48"
           target="_blank"
-          style={{ color: "#000" }}
         >
           RSVP by 01.06.2025
         </a>

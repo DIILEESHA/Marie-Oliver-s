@@ -10,7 +10,6 @@ const Tips = () => {
   return (
     <div className="tips-container">
       <div className="tips-header">
-        <FaLightbulb className="tips-icon" />
         <h2 className="hh">TIPS</h2>
       </div>
 

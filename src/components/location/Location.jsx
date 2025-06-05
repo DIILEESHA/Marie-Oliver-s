@@ -47,7 +47,7 @@ const Location = () => {
                 islands. Check
                 <a
                   href="https://we.tl/t-1AlLrpfebI"
-                  style={{ margin: "0px 5px" }}
+                  style={{ margin: "0px 3px" }}
                   target="_blank"
                 >
                   here
@@ -74,7 +74,7 @@ const Location = () => {
                 recommendations{" "}
                 <a
                   href="https://we.tl/t-1AlLrpfebI"
-                  style={{ margin: "0px 5px" }}
+                  style={{ margin: "0px 1px" }}
                   target="_blank"
                 >
                   here.
@@ -104,7 +104,7 @@ const Location = () => {
                   {" "}
                   rentalsthrough{" "}
                 </a>
-                rentalsthrough our trusted local agencies.
+            our trusted local agencies.
               </p>
             </div>
           </div>

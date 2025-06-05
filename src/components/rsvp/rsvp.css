@@ -22,7 +22,7 @@
   font-family: "life";
   padding: 15px 20px;
   margin-top: 50px;
-  color: #000!important;
+  color: var(--blue)!important;
 }
 
 /* Media Queries for Responsive Design */
