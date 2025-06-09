@@ -1,5 +1,28 @@
 import "./l.css";
+import { Modal } from "antd";
+import { useState } from "react";
+import travelPdf from "../../assets/travel.pdf"; // Make sure the path is correct
+
 const Location = () => {
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
+  const showModal = () => {
+    setIsModalVisible(true);
+  };
+
+  const handleCancel = () => {
+    setIsModalVisible(false);
+  };
+
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = travelPdf;
+    link.download = "travel-info.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="location_grid">
       <div className="location_sub">
@@ -46,9 +69,12 @@ const Location = () => {
                 Athens, fly domestically from Athens, or connect through nearby
                 islands. Check
                 <a
-                  href="https://we.tl/t-1AlLrpfebI"
+                  href="#"
                   style={{ margin: "0px 3px" }}
-                  target="_blank"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    showModal();
+                  }}
                 >
                   here
                 </a>
@@ -73,9 +99,12 @@ const Location = () => {
                 Pounda. Need accommodation suggestions? Find helpful
                 recommendations{" "}
                 <a
-                  href="https://we.tl/t-1AlLrpfebI"
+                  href="#"
                   style={{ margin: "0px 1px" }}
-                  target="_blank"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    showModal();
+                  }}
                 >
                   here.
                 </a>
@@ -97,20 +126,47 @@ const Location = () => {
                 yourstay. Let us know your preference 1- 2 months before
                 arrival, and we'll help arrange
                 <a
-                  href="https://we.tl/t-1AlLrpfebI"
+                  href="#"
                   style={{ margin: "0px 5px" }}
-                  target="_blank"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    showModal();
+                  }}
                 >
-                  {" "}
-                  rentalsthrough{" "}
+                  rentals through
                 </a>
-            our trusted local agencies.
+                our trusted local agencies.
               </p>
             </div>
           </div>
           <div className="l_line"></div>
         </div>
       </div>
+
+      <Modal
+        title="Travel Information"
+        visible={isModalVisible}
+        onCancel={handleCancel}
+        footer={[
+          <button style={{background:"#000",color:"#fff",padding:"10px 20px",border:"none",cursor:"pointer"}} key="download" onClick={handleDownload} className="ant-btn ant-btn-primary">
+            Download PDF
+          </button>,
+          <button style={{background:"#fff",color:"#000",padding:"10px 20px",border:"1px solid #333",cursor:"pointer"}} key="close" onClick={handleCancel} className="ant-btn">
+            Close
+          </button>,
+        ]}
+        width="100%"
+        style={{ top: 20 }}
+      >
+        <div style={{ height: "70vh" }}>
+          <iframe
+            src={travelPdf}
+            width="100%"
+            height="100%"
+            title="Travel Information PDF"
+          />
+        </div>
+      </Modal>
     </div>
   );
 };
