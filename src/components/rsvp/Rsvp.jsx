@@ -10,7 +10,7 @@ const Rsvp = () => {
           href="https://forms.gle/heZRAv9Qy3rgXaT48"
           target="_blank"
         >
-          RSVP by 01.06.2025
+          RSVP by 01.07.2025
         </a>
       </button>
     </div>
